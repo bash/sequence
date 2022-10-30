@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Polyglot's Overview of Sequences and their Operators</title>
+	<style>
+		html { font-size: 120%; font-family: 'Helvetica', 'Arial', sans-serif; }
+		code { font-family: 'Jetbrains Mono', monospace; }
+		table { border-spacing: 0; }
+		th { text-align: left; }
+		th, td { padding: 5px 20px; }
+		th { border-right: 2px dotted #000; }
+		thead tr:last-child th { border-bottom: 2px solid #000; border-top: 2px solid #000; }
+		thead { position: sticky; top: 0; background-color: rgba(255, 255, 255, 0.9); }
+		table { overflow-y: auto; }
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="3">.NET</th>
+				<th colspan="2">Rust</th>
+				<th colspan="2">Python</th>
+				<th colspan="2">JavaScript</th>
+				<th>Java</th>
+			</tr>
+			<tr style="position: sticky">
+				<th><code>System</code></th>
+				<th>Funcky</th>
+				<th><code>F#</code></th>
+				<th><code>std</code></th>
+				<th><code>itertools</code></th>
+				<th>Standard Library</th>
+				<th><a href="https://more-itertools.readthedocs.io/en/stable/index.html"><code>more-itertools</code></a></th>
+				<th>built-in</th>
+				<th>npm Itertools</th>
+				<th></th>
+			</tr>
+			<tr>
+				<th colspan="2"><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1"><code>IEnumerable&lt;T&gt;</code></a></th>
+				<th><code>Seq&lt;'T&gt;</code></th>
+				<th colspan="2"><a href="https://doc.rust-lang.org/std/iter/trait.Iterator.html"><code>Iterator</code></a></th>
+				<th colspan="2"><a href="https://docs.python.org/3/glossary.html#term-iterable">iterable</a></th>
+				<th colspan="2"><code>Iterator</code></th>
+				<th><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html"><code>Stream&lt;T&gt;</code></a></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.aggregate"><code>Aggregate</code></a></td>
+				<td>&mdash;</td>
+				<td><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#fold"><code>Seq.fold</code></a></td>
+				<td><a href="https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.fold"><code>fold</code></a></td>
+				<td>&mdash;</td>
+				<td><a href="https://docs.python.org/3/library/itertools.html#itertools.accumulate"><code>accumulate</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.all"><code>All</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td><a href="https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.all"><code>all</code></a></td>
+				<td>&mdash;</td>
+				<td><a href="https://docs.python.org/3/library/functions.html#all"><code>all</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td><a href="https://github.com/nvie/itertools.js#all"><code>all</code></a></td>
+				<td><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#allMatch-java.util.function.Predicate-"><code>allMatch</code></a></td>
+			</tr>
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.any"><code>Any</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td><a href="https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.any"><code>any</code></a></td>
+				<td>&mdash;</td>
+				<td><a href="https://docs.python.org/3/library/functions.html#any"><code>any</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td><a href="https://github.com/nvie/itertools.js#any"><code>any</code></a></td>
+				<td><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#anyMatch-java.util.function.Predicate-"><code>anyMatch</code></a></td>
+			</tr>
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.append"><code>Append</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<!-- AsEnumerable omitted -->
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.average"><code>Average</code></a></td>
+				<td>&mdash;</td>
+				<td><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#average"><code>Seq.average</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td><a href="https://docs.python.org/3/library/statistics.html#statistics.mean"><code>mean</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<!-- Cast omitted -->
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.chunk"><code>Chunk</code></a></td>
+				<td>&mdash;</td>
+				<td><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#chunkBySize"><code>Seq.chunkBySize</code></a></td>
+				<td>&mdash;</td>
+				<td><a href="https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.chunks"><code>chunks</code></a></td>
+				<td>&mdash;</td>
+				<td><a href="https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.ichunked"><code>ichunked</code></a></td>
+				<td>&mdash;</td>
+				<td><a href="https://github.com/nvie/itertools.js#chunked"><code>chunked</code></a></td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.concat"><code>Concat</code></a></td>
+				<td>&mdash;</td>
+				<td><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#append"><code>Seq.append</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.concat"><code>Concat</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.contains"><code>Contains</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.count"><code>Count</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<!-- DefaultIfEmpty omitted -->
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinct"><code>Distinct</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+			<tr>
+				<td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.elementat"><code>ElementAt</code></a></td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+				<td>&mdash;</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
