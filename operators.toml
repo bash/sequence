@@ -3,35 +3,35 @@ funcky = { name = "AdjacentGroupBy", url = "https://polyadic.github.io/funcky/en
 
 [[operators]]
 dotnet = { name = "Aggregate", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.aggregate" }
-fsharp = "Seq.fold"
+fsharp = "fold"
 rust = { name = "fold", url = "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.fold" }
 python = { name = "accumulate", url = "https://docs.python.org/3/library/itertools.html#itertools.accumulate" }
 
 [[operators]]
-fsharp = "Seq.reduce"
+fsharp = "reduce"
 
 [[operators]]
-fsharp = "Seq.reduceBack"
+fsharp = "reduceBack"
 
 [[operators]]
-fsharp = "Seq.foldBack"
+fsharp = "foldBack"
 
 [[operators]]
 dotnet = { name = "All", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.all" }
-fsharp = "Seq.forall"
+fsharp = "forall"
 python = { name = "all", url = "https://docs.python.org/3/library/functions.html#all" }
 npm_itertools = { name = "all", url = "https://github.com/nvie/itertools.js#all" }
 java = { name = "allMatch", url = "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#allMatch-java.util.function.Predicate-" }
 
 [[operators]]
 dotnet = { name = "Any", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.any" }
-fsharp = "Seq.exists"
+fsharp = "exists"
 python = { name = "any", url = "https://docs.python.org/3/library/functions.html#any" }
 npm_itertools = { name = "any", url = "https://github.com/nvie/itertools.js#any" }
 java = { name = "anyMatch", url = "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#anyMatch-java.util.function.Predicate-" }
 
 [[operators]]
-fsharp = "Seq.allPairs"
+fsharp = "allPairs"
 
 [[operators]]
 funcky = { name = "AnyOrElse" }
@@ -43,108 +43,108 @@ dotnet = { name = "Append", url = "https://learn.microsoft.com/en-us/dotnet/api/
 
 [[operators]]
 dotnet = { name = "Average", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.average" }
-fsharp = "Seq.average"
+fsharp = "average"
 python = { name = "mean", url = "https://docs.python.org/3/library/statistics.html#statistics.mean" }
 
 [[operators]]
 dotnet = { name = "Chunk", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.chunk" }
 funcky = { name = "Chunk" }
-fsharp = "Seq.chunkBySize"
+fsharp = "chunkBySize"
 rust_itertools = { name = "chunks", url = "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.chunks"}
 more_itertools = { name = "ichunked", url = "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.ichunked" }
 npm_itertools = { name = "chunked", url = "https://github.com/nvie/itertools.js#chunked" }
 
-# Cast from Linq and Seq.cast from F# omitted
+# Cast from Linq and cast from F# omitted
 
 [[operators]]
-fsharp = "Seq.compareWith"
+fsharp = "compareWith"
 
 [[operators]]
 dotnet = { name = "Concat", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.concat" }
-fsharp = "Seq.append"
+fsharp = "append"
 
 [[operators]]
 funcky = "Sequence.Concat"
-fsharp = "Seq.concat"
+fsharp = "concat"
 
 [[operators]]
 funcky = { name = "ConcatToString" }
 
 [[operators]]
 dotnet = { name = "Contains", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.contains" }
-fsharp = "Seq.contains"
+fsharp = "contains"
 
 # DefaultIfEmpty from Linq omitted
 
 [[operators]]
 dotnet = { name = "Count", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.count" }
-fsharp = "Seq.length"
+fsharp = "length"
 
 [[operators]]
-fsharp = "Seq.countBy"
+fsharp = "countBy"
 
 [[operators]]
 dotnet = { name = "Distinct", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinct" }
-fsharp = "Seq.distinct"
+fsharp = "distinct"
 
 [[operators]]
 dotnet = { name = "ElementAt", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.elementat" }
-fsharp = "Seq.item"
+fsharp = "item"
 
 [[operators]]
 funcky = { name = "ElementAtOrNone" }
-fsharp = "Seq.tryItem"
+fsharp = "tryItem"
 
 # Empty from Linq omitted for now
 
 [[operators]]
 dotnet = { name = "Except", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.except" }
-fsharp = "Seq.except"
+fsharp = "except"
 
 [[operators]]
 funcky = { name = "ForEach", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#foreach" }
-fsharp = "Seq.iter"
+fsharp = "iter"
 rust = { name = "for_each", url = "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.for_each" }
 java = { name = "forEachOrdered", url = "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#forEachOrdered-java.util.function.Consumer-" }
 
 [[operators]]
-fsharp = "Seq.findIndex"
+fsharp = "findIndex"
 
 [[operators]]
-fsharp = "Seq.findIndexBack"
+fsharp = "findIndexBack"
 
 [[operators]]
-fsharp = "Seq.tryFindIndex"
+fsharp = "tryFindIndex"
 
 [[operators]]
-fsharp = "Seq.tryFindIndexBack"
+fsharp = "tryFindIndexBack"
 
 [[operators]]
 dotnet = { name = "First", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.first" }
-fsharp = "Seq.head"
+fsharp = "head"
 
 [[operators]]
 funcky = { name = "FirstOrNone" }
-fsharp = "Seq.tryHead"
+fsharp = "tryHead"
 
 [[operators]]
 dotnet = { name = "First(predicate)", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.first" }
-fsharp = "Seq.find"
-# Also: fsharp = "Seq.tryPick" ?
+fsharp = "find"
+# Also: fsharp = "tryPick" ?
 
 [[operators]]
 funcky = { name = "FirstOrNone(predicate)" }
-fsharp = "Seq.tryFind"
+fsharp = "tryFind"
 
 [[operators]]
-fsharp = "Seq.pick"
+fsharp = "pick"
 
 [[operators]]
-fsharp = "Seq.tail"
+fsharp = "tail"
 
 [[operators]]
 dotnet = { name = "GroupBy", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.groupby" }
-fsharp = "Seq.groupBy"
+fsharp = "groupBy"
 
 [[operators]]
 dotnet = { name = "GroupJoin", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.groupjoin" }
@@ -164,19 +164,19 @@ dotnet = { name = "Intersect", url = "https://learn.microsoft.com/en-us/dotnet/a
 funcky = { name = "Intersperse", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#intersperse" }
 
 [[operators]]
-fsharp = "Seq.insertAt"
+fsharp = "insertAt"
 
 [[operators]]
-fsharp = "Seq.insertManyAt"
+fsharp = "insertManyAt"
 
 [[operators]]
-fsharp = "Seq.updateAt"
+fsharp = "updateAt"
 
 [[operators]]
-fsharp = "Seq.removeAt"
+fsharp = "removeAt"
 
 [[operators]]
-fsharp = "Seq.removeManyAt"
+fsharp = "removeManyAt"
 
 [[operators]]
 dotnet = { name = "Join", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.join" }
@@ -186,41 +186,41 @@ funcky = { name = "JoinToString" }
 
 [[operators]]
 dotnet = { name = "Last", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.last" }
-fsharp = "Seq.last"
+fsharp = "last"
 
 [[operators]]
 funcky = { name = "LastOrNone"}
-fsharp = "Seq.tryLast"
+fsharp = "tryLast"
 
 [[operators]]
 dotnet = { name = "Last(predicate)", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.last" }
-fsharp = "Seq.findBack"
+fsharp = "findBack"
 
 [[operators]]
 dotnet = { name = "LastOrNone(predicate)", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.last" }
-fsharp = "Seq.tryFindBack"
+fsharp = "tryFindBack"
 
 [[operators]]
 funcky = { name = "Materialize" }
 
 [[operators]]
 dotnet = { name = "Max", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.max" }
-fsharp = "Seq.max"
+fsharp = "max"
 
 [[operators]]
 funcky = { name = "Memoize" }
-fsharp = "Seq.cache"
+fsharp = "cache"
 
 [[operators]]
 funcky = { name = "Merge", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#merge" }
 
 [[operators]]
 dotnet = { name = "Min", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.min" }
-fsharp = "Seq.min"
+fsharp = "min"
 
 [[operators]]
 funcky = { name = "None" }
-fsharp = "Seq.isEmpty"
+fsharp = "isEmpty"
 
 [[operators]]
 funcky = { name = "None(predicate)" }
@@ -230,23 +230,23 @@ dotnet = { name = "OfType", url = "https://learn.microsoft.com/en-us/dotnet/api/
 
 [[operators]]
 dotnet = { name = "Order", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.order" }
-fsharp = "Seq.sort"
+fsharp = "sort"
 
 # TODO: OrderBy and OrderByDescending (F#: sortBy, sortByDescending)
 
 [[operators]]
 dotnet = { name = "OrderDescending", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.orderdescending" }
-fsharp = "Seq.sortDescending"
+fsharp = "sortDescending"
 
 [[operators]]
 funcky = { name = "Pairwise", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#pairwise" }
-fsharp = "Seq.pairwise"
+fsharp = "pairwise"
 
 [[operators]]
 funcky = { name = "Partition", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#partition" }
 
 [[operators]]
-fsharp = "Seq.permute"
+fsharp = "permute"
 
 [[operators]]
 funcky = { name = "PowerSet", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#powerset" }
@@ -258,13 +258,13 @@ dotnet = { name = "Prepend", url = "https://learn.microsoft.com/en-us/dotnet/api
 
 [[operators]]
 dotnet = { name = "Reverse", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.reverse" }
-fsharp = "Seq.rev"
+fsharp = "rev"
 
 [[operators]]
-fsharp = "Seq.scan"
+fsharp = "scan"
 
 [[operators]]
-fsharp = "Seq.scanBack"
+fsharp = "scanBack"
 
 [[operators]]
 funcky = { name = "InclusiveScan" }
@@ -275,17 +275,17 @@ funcky = { name = "ExclusiveScan" }
 
 [[operators]]
 dotnet = { name = "Select", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.select" }
-fsharp = "Seq.map"
+fsharp = "map"
 
 [[operators]]
 dotnet = { name = "SelectMany", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.selectmany" }
-fsharp = "Seq.collect"
+fsharp = "collect"
 
 [[operators]]
-fsharp = "Seq.mapFold"
+fsharp = "mapFold"
 
 [[operators]]
-fsharp = "Seq.mapFoldBack"
+fsharp = "mapFoldBack"
 
 [[operators]]
 funcky = { name = "Sequence" }
@@ -298,42 +298,42 @@ funcky = { name = "Shuffle", url = "https://polyadic.github.io/funcky/enumerable
 
 [[operators]]
 dotnet = { name = "Single", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.single" }
-fsharp = "Seq.exactlyOne"
+fsharp = "exactlyOne"
 
 [[operators]]
-fsharp = "Seq.tryExactlyOne"
+fsharp = "tryExactlyOne"
 
 [[operators]]
 dotnet = { name = "Skip", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.skip" }
-fsharp = "Seq.skip"
+fsharp = "skip"
 
 [[operators]]
 dotnet = { name = "SkipLast", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.skiplast" }
 
 [[operators]]
 dotnet = { name = "SkipWhile", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.skipwhile" }
-fsharp = "Seq.skipWhile"
+fsharp = "skipWhile"
 
 [[operators]]
 funcky = { name = "SlidingWindow", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#slidingwindow" }
-fsharp = "Seq.windowed"
+fsharp = "windowed"
 
 [[operators]]
 funcky = { name = "Split", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#split" }
 
 [[operators]]
-fsharp = "Seq.splitInto"
+fsharp = "splitInto"
 
 [[operators]]
 dotnet = { name = "Sum", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.sum" }
-fsharp = "Seq.sum"
+fsharp = "sum"
 
 [[operators]] # Take at most n elements
 dotnet = { name = "Take", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.take" }
-fsharp = "Seq.truncate"
+fsharp = "truncate"
 
 [[operators]] # Take exactly n elements
-fsharp = "Seq.take"
+fsharp = "take"
 
 [[operators]]
 funcky = { name = "TakeEvery", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#takeevery" }
@@ -343,11 +343,11 @@ dotnet = { name = "TakeLast", url = "https://learn.microsoft.com/en-us/dotnet/ap
 
 [[operators]]
 dotnet = { name = "TakeWhile", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.takewhile" }
-fsharp = "Seq.takeWhile"
+fsharp = "takeWhile"
 
 [[operators]]
 funcky = { name = "Transpose", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#transpose" }
-fsharp = "Seq.transpose"
+fsharp = "transpose"
 
 [[operators]]
 funcky = { name = "Traverse" }
@@ -361,22 +361,22 @@ dotnet = { name = "Union", url = "https://learn.microsoft.com/en-us/dotnet/api/s
 
 [[operators]]
 dotnet = { name = "Where", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.where" }
-fsharp = "Seq.filter"
-# Also: fsharp = "Seq.where"
+fsharp = "filter"
+# Also: fsharp = "where"
 
 [[operators]]
 funcky = { name = "WhereNotNull", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#wherenotnull" }
 
 [[operators]]
 funcky = { name = "WhereSelect", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#whereselect" }
-fsharp = "Seq.choose"
+fsharp = "choose"
 
 [[operators]]
 funcky = { name = "WithFirst", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#withfirst" }
 
 [[operators]]
 funcky = { name = "WithIndex", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#withindex" }
-fsharp = "Seq.indexed"
+fsharp = "indexed"
 
 [[operators]]
 funcky = { name = "WithLast", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#withlast" }
@@ -386,7 +386,7 @@ funcky = { name = "WithPrevious", url = "https://polyadic.github.io/funcky/enume
 
 [[operators]]
 dotnet = { name = "Zip", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.zip" }
-fsharp = "Seq.zip"
+fsharp = "zip"
 
 [[operators]]
 funcky = { name = "ZipLongest", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#withprevious" }

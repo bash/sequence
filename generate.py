@@ -62,9 +62,7 @@ def _default_url(library_name: str, operator_name: str) -> str:
 
 
 def _default_fsharp_url(operator_name: str) -> str:
-    seq_prefix = "Seq."
-    if operator_name.startswith(seq_prefix):
-        return f'https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#{operator_name[len(seq_prefix):]}'
+    return f'https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#{operator_name}'
 
 
 def _operator_row(operator: Operator):
