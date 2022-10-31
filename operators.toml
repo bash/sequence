@@ -3,20 +3,20 @@ funcky = { name = "AdjacentGroupBy", url = "https://polyadic.github.io/funcky/en
 
 [[operators]]
 dotnet = { name = "Aggregate", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.aggregate" }
-fsharp = { name = "Seq.fold", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#fold" }
+fsharp = { name = "Seq.fold" }
 rust = { name = "fold", url = "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.fold" }
 python = { name = "accumulate", url = "https://docs.python.org/3/library/itertools.html#itertools.accumulate" }
 
 [[operators]]
 dotnet = { name = "All", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.all" }
-fsharp = { name = "Seq.forall", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#forall" }
+fsharp = { name = "Seq.forall" }
 python = { name = "all", url = "https://docs.python.org/3/library/functions.html#all" }
 npm_itertools = { name = "all", url = "https://github.com/nvie/itertools.js#all" }
 java = { name = "allMatch", url = "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#allMatch-java.util.function.Predicate-" }
 
 [[operators]]
 dotnet = { name = "Any", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.any" }
-fsharp = { name = "Seq.exists", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#exists" }
+fsharp = { name = "Seq.exists" }
 python = { name = "any", url = "https://docs.python.org/3/library/functions.html#any" }
 npm_itertools = { name = "any", url = "https://github.com/nvie/itertools.js#any" }
 java = { name = "anyMatch", url = "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#anyMatch-java.util.function.Predicate-" }
@@ -31,43 +31,43 @@ dotnet = { name = "Append", url = "https://learn.microsoft.com/en-us/dotnet/api/
 
 [[operators]]
 dotnet = { name = "Average", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.average" }
-fsharp = { name = "Seq.average", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#average"}
+fsharp = { name = "Seq.average" }
 python = { name = "mean", url = "https://docs.python.org/3/library/statistics.html#statistics.mean" }
 
 [[operators]]
 dotnet = { name = "Chunk", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.chunk" }
 funcky = { name = "Chunk" }
-fsharp = { name = "Seq.chunkBySize", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#chunkBySize"}
+fsharp = { name = "Seq.chunkBySize" }
 rust_itertools = { name = "chunks", url = "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.chunks"}
 more_itertools = { name = "ichunked", url = "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.ichunked" }
 npm_itertools = { name = "chunked", url = "https://github.com/nvie/itertools.js#chunked" }
 
-# Cast from Linq omitted
+# Cast from Linq and Seq.cast from F# omitted
 
 [[operators]]
 dotnet = { name = "Concat", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.concat" }
-fsharp = { name = "Seq.append", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#append" }
+fsharp = { name = "Seq.append" }
 
 [[operators]]
 funcky = { name = "ConcatToString" }
 
 [[operators]]
 dotnet = { name = "Contains", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.contains" }
-fsharp = { name = "Seq.contains", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#contains" }
+fsharp = { name = "Seq.contains" }
 
 # DefaultIfEmpty from Linq omitted
 
 [[operators]]
 dotnet = { name = "Count", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.count" }
-fsharp = { name = "Seq.length", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#length" }
+fsharp = { name = "Seq.length" }
 
 [[operators]]
 dotnet = { name = "Distinct", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinct" }
-fsharp = { name = "Seq.distinct", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#distinct" }
+fsharp = { name = "Seq.distinct" }
 
 [[operators]]
 dotnet = { name = "ElementAt", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.elementat" }
-fsharp = { name = "Seq.item", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#item" }
+fsharp = { name = "Seq.item" }
 
 # Empty from Linq omitted for now
 
@@ -76,7 +76,7 @@ dotnet = { name = "Except", url = "https://learn.microsoft.com/en-us/dotnet/api/
 
 [[operators]]
 funcky = { name = "ForEach", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#foreach" }
-fsharp = { name = "Seq.iter", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#iter" }
+fsharp = { name = "Seq.iter" }
 rust = { name = "for_each", url = "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.for_each" }
 java = { name = "forEachOrdered", url = "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#forEachOrdered-java.util.function.Consumer-" }
 
