@@ -1,5 +1,7 @@
 import tomllib
 from html import escape
+from dataclasses import dataclass
+from typing import Optional, Self
 
 _LIBRARIES = [
     'dotnet',
@@ -18,14 +20,35 @@ _ABSENT_OPERATOR = '<td>&mdash;</td>'
 
 _NEWLINE = '\n'
 
-def _operator_cell(operator, library_name: str) -> str:
+
+@dataclass(frozen=True, kw_only=True)
+class OperatorInstance:
+    name: str
+    url: Optional[str]
+
+    @staticmethod
+    def from_toml(toml: dict, library_name: str) -> Self:
+        name = toml['name']
+        url = toml.get('url') or _default_url(library_name, name)
+        return OperatorInstance(name=name, url=url)
+
+
+@dataclass(frozen=True, kw_only=True)
+class Operator:
+    instances: dict[str, OperatorInstance]
+
+    @staticmethod
+    def from_toml(toml: dict):
+        instances = { library:OperatorInstance.from_toml(instance, library) for library, instance in toml.items() }
+        return Operator(instances=instances)
+
+
+def _operator_cell(operator: OperatorInstance) -> str:
     if operator is None:
         return _ABSENT_OPERATOR
 
-    operator_name = operator['name']
-    url = operator.get('url') or _default_url(library_name, operator_name)
-    label = f'<code>{escape(operator_name)}</code>'
-    label = f'<a href="{escape(url)}">{label}</a>' if url is not None else label
+    label = f'<code>{escape(operator.name)}</code>'
+    label = f'<a href="{escape(operator.url)}">{label}</a>' if operator.url is not None else label
     return f'<td>{label}</td>'
 
 
@@ -41,13 +64,13 @@ def _default_fsharp_url(operator_name: str) -> str:
         return f'https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#{operator_name[len(seq_prefix):]}'
 
 
-def _operator_row(operator):
-    cells = [_operator_cell(operator.get(library), library) for library in _LIBRARIES]
+def _operator_row(operator: Operator):
+    cells = [_operator_cell(operator.instances.get(library)) for library in _LIBRARIES]
     return f'<tr>{_NEWLINE.join(cells)}</tr>'
 
 
 with open("operators.toml", "rb") as f:
-    operators = tomllib.load(f)['operators']
+    operators = [Operator.from_toml(o) for o in tomllib.load(f)['operators']]
 
 with open("template.html", "r") as f:
     template = f.read()
