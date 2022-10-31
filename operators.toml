@@ -32,19 +32,22 @@ python = { name = "mean", url = "https://docs.python.org/3/library/statistics.ht
 
 [[operators]]
 dotnet = { name = "Concat", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.concat" }
-fsharp = { name = "Seq.append", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#append"}
+fsharp = { name = "Seq.append", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#append" }
 
 [[operators]]
 dotnet = { name = "Contains", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.contains" }
+fsharp = { name = "Seq.contains", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#contains" }
 
 # DefaultIfEmpty from Linq omitted
 
 [[operators]]
 dotnet = { name = "Count", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.count" }
+fsharp = { name = "Seq.length", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#length" }
 
 [[operators]]
 dotnet = { name = "Distinct", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinct" }
+fsharp = { name = "Seq.distinct", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#distinct" }
 
 [[operators]]
 dotnet = { name = "ElementAt", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.elementat" }
-
+fsharp = { name = "Seq.item", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#item" }
