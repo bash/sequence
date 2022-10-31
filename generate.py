@@ -22,7 +22,10 @@ def _operator_cell(operator) -> str:
     if operator is None:
         return _ABSENT_OPERATOR
     else:
-        return f'<td><a href="{escape(operator["url"])}"><code>{operator["name"]}</code></a></td>'
+        url = operator.get('url')
+        label = f'<code>{operator["name"]}</code>'
+        label = f'<a href="{url}">{label}</a>' if url is not None else label
+        return f'<td>{label}</td>'
 
 def _operator_row(operator):
     cells = [_operator_cell(operator.get(library)) for library in _LIBRARIES]
