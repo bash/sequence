@@ -190,16 +190,31 @@ dotnet = { name = "SkipLast", url = "https://learn.microsoft.com/en-us/dotnet/ap
 dotnet = { name = "SkipWhile", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.skipwhile" }
 
 [[operators]]
+funcky = { name = "SlidingWindow", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#slidingwindow" }
+
+[[operators]]
+funcky = { name = "Split", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#split" }
+
+[[operators]]
 dotnet = { name = "Sum", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.sum" }
 
 [[operators]]
 dotnet = { name = "Take", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.take" }
 
 [[operators]]
+funcky = { name = "TakeEvery", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#takeevery" }
+
+[[operators]]
 dotnet = { name = "TakeLast", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.takelast" }
 
 [[operators]]
 dotnet = { name = "TakeWhile", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.takewhile" }
+
+[[operators]]
+funcky = { name = "Transpose", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#transpose" }
+
+[[operators]]
+funcky = { name = "Traverse" }
 
 # To[Collection] from Linq omitted for now
 
@@ -212,4 +227,25 @@ dotnet = { name = "Union", url = "https://learn.microsoft.com/en-us/dotnet/api/s
 dotnet = { name = "Where", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.where" }
 
 [[operators]]
+funcky = { name = "WhereNotNull", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#wherenotnull" }
+
+[[operators]]
+funcky = { name = "WhereSelect", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#whereselect" }
+
+[[operators]]
+funcky = { name = "WithFirst", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#withfirst" }
+
+[[operators]]
+funcky = { name = "WithIndex", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#withindex" }
+
+[[operators]]
+funcky = { name = "WithLast", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#withlast" }
+
+[[operators]]
+funcky = { name = "WithPrevious", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#withprevious" }
+
+[[operators]]
 dotnet = { name = "Zip", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.zip" }
+
+[[operators]]
+funcky = { name = "ZipLongest", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#withprevious" }
