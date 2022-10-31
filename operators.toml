@@ -3,20 +3,20 @@ funcky = { name = "AdjacentGroupBy", url = "https://polyadic.github.io/funcky/en
 
 [[operators]]
 dotnet = { name = "Aggregate", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.aggregate" }
-fsharp = { name = "Seq.fold" }
+fsharp = "Seq.fold"
 rust = { name = "fold", url = "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.fold" }
 python = { name = "accumulate", url = "https://docs.python.org/3/library/itertools.html#itertools.accumulate" }
 
 [[operators]]
 dotnet = { name = "All", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.all" }
-fsharp = { name = "Seq.forall" }
+fsharp = "Seq.forall"
 python = { name = "all", url = "https://docs.python.org/3/library/functions.html#all" }
 npm_itertools = { name = "all", url = "https://github.com/nvie/itertools.js#all" }
 java = { name = "allMatch", url = "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#allMatch-java.util.function.Predicate-" }
 
 [[operators]]
 dotnet = { name = "Any", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.any" }
-fsharp = { name = "Seq.exists" }
+fsharp = "Seq.exists"
 python = { name = "any", url = "https://docs.python.org/3/library/functions.html#any" }
 npm_itertools = { name = "any", url = "https://github.com/nvie/itertools.js#any" }
 java = { name = "anyMatch", url = "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#anyMatch-java.util.function.Predicate-" }
@@ -31,13 +31,13 @@ dotnet = { name = "Append", url = "https://learn.microsoft.com/en-us/dotnet/api/
 
 [[operators]]
 dotnet = { name = "Average", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.average" }
-fsharp = { name = "Seq.average" }
+fsharp = "Seq.average"
 python = { name = "mean", url = "https://docs.python.org/3/library/statistics.html#statistics.mean" }
 
 [[operators]]
 dotnet = { name = "Chunk", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.chunk" }
 funcky = { name = "Chunk" }
-fsharp = { name = "Seq.chunkBySize" }
+fsharp = "Seq.chunkBySize"
 rust_itertools = { name = "chunks", url = "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.chunks"}
 more_itertools = { name = "ichunked", url = "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.ichunked" }
 npm_itertools = { name = "chunked", url = "https://github.com/nvie/itertools.js#chunked" }
@@ -46,28 +46,28 @@ npm_itertools = { name = "chunked", url = "https://github.com/nvie/itertools.js#
 
 [[operators]]
 dotnet = { name = "Concat", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.concat" }
-fsharp = { name = "Seq.append" }
+fsharp = "Seq.append"
 
 [[operators]]
 funcky = { name = "ConcatToString" }
 
 [[operators]]
 dotnet = { name = "Contains", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.contains" }
-fsharp = { name = "Seq.contains" }
+fsharp = "Seq.contains"
 
 # DefaultIfEmpty from Linq omitted
 
 [[operators]]
 dotnet = { name = "Count", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.count" }
-fsharp = { name = "Seq.length" }
+fsharp = "Seq.length"
 
 [[operators]]
 dotnet = { name = "Distinct", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.distinct" }
-fsharp = { name = "Seq.distinct" }
+fsharp = "Seq.distinct"
 
 [[operators]]
 dotnet = { name = "ElementAt", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.elementat" }
-fsharp = { name = "Seq.item" }
+fsharp = "Seq.item"
 
 # Empty from Linq omitted for now
 
@@ -76,7 +76,7 @@ dotnet = { name = "Except", url = "https://learn.microsoft.com/en-us/dotnet/api/
 
 [[operators]]
 funcky = { name = "ForEach", url = "https://polyadic.github.io/funcky/enumerable-extensions/enumerable-extensions.html#foreach" }
-fsharp = { name = "Seq.iter" }
+fsharp = "Seq.iter"
 rust = { name = "for_each", url = "https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.for_each" }
 java = { name = "forEachOrdered", url = "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#forEachOrdered-java.util.function.Consumer-" }
 

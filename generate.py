@@ -1,7 +1,7 @@
 import tomllib
 from html import escape
 from dataclasses import dataclass
-from typing import Optional, Self
+from typing import Optional, Self, Union
 
 _LIBRARIES = [
     'dotnet',
@@ -27,7 +27,10 @@ class OperatorInstance:
     url: Optional[str]
 
     @staticmethod
-    def from_toml(toml: dict, library_name: str) -> Self:
+    def from_toml(toml: Union[dict, str], library_name: str) -> Self:
+        if isinstance(toml, str):
+            return OperatorInstance(name=toml, url=_default_url(library_name, toml))
+
         name = toml['name']
         url = toml.get('url') or _default_url(library_name, name)
         return OperatorInstance(name=name, url=url)
