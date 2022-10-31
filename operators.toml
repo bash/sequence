@@ -28,6 +28,13 @@ dotnet = { name = "Average", url = "https://learn.microsoft.com/en-us/dotnet/api
 fsharp = { name = "Seq.average", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#average"}
 python = { name = "mean", url = "https://docs.python.org/3/library/statistics.html#statistics.mean" }
 
+[[operators]]
+dotnet = { name = "Chunk", url = "https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.chunk" }
+fsharp = { name = "Seq.chunkBySize", url = "https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#chunkBySize"}
+rust_itertools = { name = "chunks", url = "https://docs.rs/itertools/latest/itertools/trait.Itertools.html#method.chunks"}
+more_itertools = { name = "ichunked", url = "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.ichunked" }
+npm_itertools = { name = "chunked", url = "https://github.com/nvie/itertools.js#chunked" }
+
 # Cast from Linq omitted
 
 [[operators]]
